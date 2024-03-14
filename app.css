@@ -1,0 +1,116 @@
+body {
+    background-image: url('london.jpg');
+  }
+  h1 {
+    color: orange;
+    font-family: 'Garamond', serif;
+    font-size: 300%;
+    border: 10px groove black;
+    display: inline;
+    padding: 1px;
+  }
+  h5 {
+    color:orange;
+    background-color:black;
+    font-family: 'Papyrus', serif;
+    font-size: 100%;
+    display: inline;
+  }
+  .image-container{
+    padding: 30px;
+  }
+  .image-container img{
+    display: inline;
+    border: 5px dashed blueviolet;
+  }
+
+    h2{
+    display: inline;
+    font-family: 'Garamond', serif;
+    font-size: 200%;
+    }
+    h3{
+        color: whitesmoke;
+        display: inline;
+        font-family: 'Garamond', serif;
+    }
+    .summary {
+        background-color: darkgray;
+        font-family: 'Garamond', serif;
+        font-size: 120%;
+    }
+    .education {
+        background-color: lightgray;
+        font-family: 'Garamond', serif;
+        font-size: 120%;
+    }
+    .experience {
+        background-color: lightgray;
+        font-family: 'Garamond', serif;
+        font-size: 120%;
+    }
+    .backrest {
+        h4{
+            border: solid gold;
+            display: inline;
+        }
+        padding: 20px;
+    }
+    .uvt {
+        h4{
+            border: solid blue;
+            display: inline;
+        }
+        padding: 20px;
+    }
+    .acs {
+        h4{
+            border: solid darkblue;
+            display: inline;
+        }
+        padding: 20px;
+    }
+    .siemens {
+        h4{
+            border: solid aquamarine;
+            display: inline;
+        }
+        padding: 20px;
+    }
+    .conti {
+        h4{
+            border: solid orange;
+            display: inline;
+        }
+        padding: 20px;
+    }
+    .adress {
+        background-color: grey;
+        color:black;
+    }
+    .name {
+        background-color: grey;
+    }
+    .table {
+        background-color: grey;
+        width: 100%; 
+        border-collapse: collapse; 
+    }
+    
+    .table table {
+        width: 100%;
+    }
+    
+    .table th, .table td {
+        border: 1px solid black; 
+        padding: 5px; 
+        text-align: left; 
+        background-color: lightblue;
+        border-radius: 10px;
+    }
+    
+    .table th {
+        background-color: lightgrey; /* Add background color to table header cells */
+        border-radius: 10px;
+    }
+    
