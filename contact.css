@@ -14,19 +14,95 @@ body {
 
   .title{
     display: inline;
+    h1 {
+        color: orange;
+        font-family: 'Garamond', serif;
+        font-size: 300%;
+        border: 10px groove black;
+        display: inline;
+        padding: 1px;
+      }
+      h5 {
+        color:orange;
+        background-color:black;
+        font-family: 'Papyrus', serif;
+        font-size: 100%;
+        display: inline;
+      }
   }
-  h1 {
-    color: orange;
-    font-family: 'Garamond', serif;
-    font-size: 300%;
-    border: 10px groove black;
-    display: inline;
-    padding: 1px;
+
+  .form{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    font-size: 35px;
   }
-  h5 {
-    color:orange;
-    background-color:black;
-    font-family: 'Papyrus', serif;
-    font-size: 100%;
-    display: inline;
-  }
+
+  #fname {
+    width: 300px; 
+    height: 40px; 
+    font-size: 16px; 
+    padding: 10px; 
+    margin-bottom: 15px;
+}
+
+#lname {
+    width: 300px; 
+    height: 40px; 
+    font-size: 16px; 
+    padding: 10px; 
+    margin-bottom: 15px;
+}
+
+
+#mail {
+    width: 300px; 
+    height: 40px; 
+    font-size: 16px; 
+    padding: 10px; 
+    margin-bottom: 15px;
+}
+
+#subject {
+    width: 300px; 
+    height: 40px; 
+    font-size: 16px; 
+    padding: 10px; 
+    margin-bottom: 15px;
+}
+
+
+#mess {
+    width: 400px; 
+    height: 200px; 
+    font-size: 16px; 
+    padding: 10px; 
+    margin-bottom: 50px;
+}
+
+#check {
+    width: 300px; 
+    height: 40px; 
+    font-size: 10px; 
+    padding: 10px; 
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
+#job{
+    width: 300px; 
+    height: 40px; 
+    font-size: 10px; 
+    padding: 10px; 
+    margin-bottom: 15px;
+}
+
+#hire{
+    width: 300px; 
+    height: 40px; 
+    font-size: 10px; 
+    padding: 10px; 
+    margin-bottom: 15px;
+}
