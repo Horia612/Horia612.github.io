@@ -22,6 +22,7 @@ body {
     border: 10px groove black;
     display: inline;
     padding: 1px;
+    background-color: grey;
   }
   h5 {
     color:orange;
