@@ -5,7 +5,7 @@
 <title>Backrest Industries</title>
 <link rel="stylesheet" href="app.css">
 <link rel="icon" type="image/x-icon" href="backrest.ico">
-<script src="app.js" defer></script>
+<script src="index.js" defer></script>
 </head>
 <body>
 
@@ -120,7 +120,7 @@ Maintained local inventory website using HTML, Node.js and MongoDB Database.
         </tr>
         <tr>
             <td>Personal Website</td>
-            <td>HTML, CSS, JAVASCRIPT, SQL</td>
+            <td>HTML, CSS, JAVASCRIPT, SQL, PHP</td>
             <td>Back&Rest</td>
           </tr>
       </table>

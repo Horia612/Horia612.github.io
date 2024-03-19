@@ -68,6 +68,7 @@ body {
         h4{
             border: solid gold;
             display: inline;
+            border-radius: 50px;
         }
         padding: 20px;
     }
@@ -75,6 +76,7 @@ body {
         h4{
             border: solid blue;
             display: inline;
+            border-radius: 50px;
         }
         padding: 20px;
     }
@@ -82,6 +84,7 @@ body {
         h4{
             border: solid darkblue;
             display: inline;
+            border-radius: 50px;
         }
         padding: 20px;
     }
@@ -89,6 +92,7 @@ body {
         h4{
             border: solid aquamarine;
             display: inline;
+            border-radius: 50px;
         }
         padding: 20px;
     }
@@ -96,6 +100,7 @@ body {
         h4{
             border: solid orange;
             display: inline;
+            border-radius: 50px;
         }
         padding: 20px;
     }
