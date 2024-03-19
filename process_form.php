@@ -14,12 +14,12 @@ if ($conn->connect_error) {
 }
 
 // Prepare SQL statement to insert form data into database
-$sql = "INSERT INTO form_data (first_name, last_name, email, subject, message, work_type, contact_option)
+$sql = "INSERT INTO results (first_name, last_name, email, subject, message, hiring, subscribe)
         VALUES (?, ?, ?, ?, ?, ?, ?)";
 
 // Prepare and bind parameters
 $stmt = $conn->prepare($sql);
-$stmt->bind_param("sssssss", $fname, $lname, $email, $subject, $message, $work, $contact);
+$stmt->bind_param("sssssss", $fname, $lname, $email, $subject, $message, $hiring, $subscribe);
 
 // Retrieve form data
 $fname = $_POST['fname'];
@@ -27,8 +27,8 @@ $lname = $_POST['lname'];
 $email = $_POST['mail'];
 $subject = $_POST['subject'];
 $message = $_POST['mess'];
-$work = $_POST['work'];
-$contact = isset($_POST['check']) ? "Yes" : "No";
+$hiring = isset($_POST['hiring']) ? "Yes" : "No";
+$subscribe = isset($_POST['subscribe']) ? "Yes" : "No";
 
 // Execute prepared statement
 if ($stmt->execute()) {
