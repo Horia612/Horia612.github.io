@@ -25,11 +25,12 @@ $hiring = isset($_POST['hiring']) ? "Yes" : "No";
 $subscribe = isset($_POST['subscribe']) ? "Yes" : "No";
 
 if ($stmt->execute()) {
-    echo "<h2 style= " font-size: 50px; color: blueviolet; font-family: 'Garamond', serif; " >Form Submitted Successfully!</h2>";
-    echo "<p style=" font-size: 50px; color: blueviolet; font-family: 'Garamond', serif; ">Thank you for your submission.</p>";
+    header("Location: submited.html");
+    exit; 
 } else {
     echo "<h2>Error: " . $sql . "<br>" . $conn->error . "</h2>";
 }
+
 
 $stmt->close();
 $conn->close();

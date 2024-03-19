@@ -1,0 +1,49 @@
+body {
+    background-image: url('wallpaper.jpg');
+  }
+  #back {
+    float: right;
+    font-size: 50px;
+    padding: 32px 16px;
+    border: 5px solid blueviolet;
+    border-radius: 50px;
+    color: blueviolet;
+    background-color: aquamarine;
+    font-family: 'Garamond', serif;
+  }
+
+  .title{
+    display: inline;
+    h1 {
+        color: orange;
+        font-family: 'Garamond', serif;
+        font-size: 300%;
+        border: 10px groove black;
+        display: inline;
+        padding: 1px;
+        background-color: grey;
+      }
+      h5 {
+        color:orange;
+        background-color:black;
+        font-family: 'Papyrus', serif;
+        font-size: 100%;
+        display: inline;
+      }
+  }
+
+  .thanks{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    height: 150vh; 
+    font-size: 35px;
+    color: greenyellow;
+    font-family: 'Garamond', serif;
+  }
+
+.adress {
+  background-color: grey;
+  color:black;
+}
