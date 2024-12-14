@@ -8,29 +8,29 @@ function calculateMonthsSinceSpecificDate() {
     var givenDate = new Date("2023-10-16");
     
     var currentDate = new Date();
-    var months, years;
+    var months;
     
   
     months = (currentDate.getFullYear() - givenDate.getFullYear()) * 12;
     months -= givenDate.getMonth() + 1;
     months += currentDate.getMonth();
     
-    if ( months < 12 ) { return months : months; } 
-    else { 
-		years = months / 12;
-		return years : years;
-					}
+    return months;
 }
 
 
 function updateText() {
-    var resultElement = document.getElementById('result');
+   var resultElement = document.getElementById('result');
     
-
-    var monthsSinceSpecificDate = calculateMonthsSinceSpecificDate();
+    var timeSinceSpecificDate = calculateMonthsSinceSpecificDate();
     
-   
-    resultElement.textContent =  monthsSinceSpecificDate + " MONTHS" ;
+    if( timeSinceSpecificDate >= 12 )
+		{
+			var extraMonths = (timeSinceSpecificDate/12 - Math.floor(timeSinceSpecificDate/12))*12;
+			resultElement.textContent =  Math.floor(timeSinceSpecificDate/12) + " YEARS " + Math.floor(extraMonths) + " MONTHS" ;
+		}
+	else
+		{resultElement.textContent =  timeSinceSpecificDate + " MONTHS" ;}
 }
 
 document.addEventListener("DOMContentLoaded", function() {
