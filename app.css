@@ -6,6 +6,7 @@ body {
     font-size: 50px;
     padding: 32px 16px;
     border: 5px solid blueviolet;
+    text-shadow: 3px 3px 5px black;
     border-radius: 50px;
     color: blueviolet;
     background-color: aquamarine;
@@ -15,6 +16,7 @@ body {
     font-size: 30px;
     padding: 16px 16px;
     border: 5px solid blueviolet;
+    text-shadow: 3px 3px 5px black;
     border-radius: 50px;
     color: blueviolet;
     background-color: aquamarine;
@@ -28,6 +30,7 @@ body {
     color: orange;
     font-family: 'Garamond', serif;
     font-size: 300%;
+    text-shadow: 5px 5px black;
     border: 10px groove black;
     display: inline;
     padding: 1px;
@@ -60,16 +63,19 @@ body {
     }
     .summary {
         background-color: darkgray;
+        text-shadow: 3px 3px 5px white, 3px 3px 5px white;
         font-family: 'Garamond', serif;
         font-size: 120%;
     }
     .education {
         background-color: lightgray;
+        text-shadow: 3px 3px 5px white, 3px 3px 5px white;
         font-family: 'Garamond', serif;
         font-size: 120%;
     }
     .experience {
         background-color: lightgray;
+        text-shadow: 3px 3px 5px white, 3px 3px 5px white;
         font-family: 'Garamond', serif;
         font-size: 120%;
     }
