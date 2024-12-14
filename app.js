@@ -8,14 +8,18 @@ function calculateMonthsSinceSpecificDate() {
     var givenDate = new Date("2023-10-16");
     
     var currentDate = new Date();
-    var months;
+    var months, year;
     
   
     months = (currentDate.getFullYear() - givenDate.getFullYear()) * 12;
     months -= givenDate.getMonth() + 1;
     months += currentDate.getMonth();
     
-    return months <= 0 ? 0 : months;
+    if ( months < 12 ) { return months <= 0 ? 0 : months; } 
+    else { 
+		years = months / 12;
+		return <= 0 ? 0 : year;
+					}
 }
 
 
