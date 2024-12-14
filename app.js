@@ -26,8 +26,15 @@ function updateText() {
     
     if( timeSinceSpecificDate >= 12 )
 		{
-			var extraMonths = (timeSinceSpecificDate/12 - Math.floor(timeSinceSpecificDate/12))*12;
-			resultElement.textContent =  Math.floor(timeSinceSpecificDate/12) + " YEARS " + Math.floor(extraMonths) + " MONTHS" ;
+			var finalYears = Math.floor(timeSinceSpecificDate/12);
+			var extraMonths = Math.floor((timeSinceSpecificDate/12 - Math.floor(timeSinceSpecificDate/12))*12);
+			var constYears = " YEARS ";
+			var costMonths = " MONTHS";
+			if( finalYears == 1)
+				constYears = " YEAR ";
+		   if(extraMonths == 1)
+				constMonths == " MONTH";
+			resultElement.textContent =  finalYears + constYears + extraMonths + " MONTHS" ;
 		}
 	else
 		{resultElement.textContent =  timeSinceSpecificDate + " MONTHS" ;}
