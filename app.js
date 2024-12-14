@@ -34,7 +34,11 @@ function updateText() {
 				constYears = " YEAR ";
 		   if(extraMonths == 1)
 				constMonths == " MONTH";
-			resultElement.textContent =  finalYears + constYears + extraMonths + " MONTHS" ;
+		   if(extraMonths)
+				resultElement.textContent =  finalYears + constYears + extraMonths + constMonths;
+		   else 
+				resultElement.textContent =  finalYears + constYears;
+				
 		}
 	else
 		{resultElement.textContent =  timeSinceSpecificDate + " MONTHS" ;}
