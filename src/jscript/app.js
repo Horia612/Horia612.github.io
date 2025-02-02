@@ -6,7 +6,7 @@
 */
 
 document.getElementById("contact").onclick = function() {
-    window.location.href = "../html/contact.html";
+    window.location.href = "src/html/contact.html";
 };
 
 
