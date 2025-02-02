@@ -5,9 +5,10 @@
   Unauthorized copying, reproduction, or distribution of this script or its contents is prohibited.
 */
 
+/* DEACTIVATED UNTIL POSSIBILITY OF DYNAMIC WEBSITE
 document.getElementById("contact").onclick = function() {
     window.location.href = "src/html/contact.html";
-};
+};*/
 
 
 function calculateMonthsSinceSpecificDate() {
