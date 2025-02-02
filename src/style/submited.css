@@ -1,5 +1,12 @@
+/*
+  Project: Backrest
+  Developer: Horia-Stefan Spataru
+  Copyright © 2025 Horia-Stefan Spataru. All rights reserved.
+  Unauthorized copying, reproduction, or distribution of this stylesheet or its contents is prohibited.
+*/
+
 body {
-    background-image: url('wallpaper.jpg');
+    background-image: url('../../res/wallpaper.jpg');
   }
   #back {
     float: right;

@@ -1,5 +1,12 @@
+/*
+  Project: Backrest
+  Developer: Horia-Stefan Spataru
+  Copyright © 2025 Horia-Stefan Spataru. All rights reserved.
+  Unauthorized copying, reproduction, or distribution of this script or its contents is prohibited.
+*/
+
 document.getElementById("contact").onclick = function() {
-    window.location.href = "contact.html";
+    window.location.href = "../html/contact.html";
 };
 
 
@@ -33,15 +40,15 @@ function updateText() {
 			if( finalYears == 1)
 				constYears = " YEAR ";
 		   if(extraMonths == 1)
-				constMonths == " MONTH";
+				  constMonths == " MONTH";
 		   if(extraMonths)
-				resultElement.textContent =  finalYears + constYears + extraMonths + constMonths;
+				  resultElement.textContent =  finalYears + constYears + extraMonths + constMonths;
 		   else 
-				resultElement.textContent =  finalYears + constYears;
+				  resultElement.textContent =  finalYears + constYears;
 				
 		}
-	else
-		{resultElement.textContent =  timeSinceSpecificDate + " MONTHS" ;}
+	  else
+		   {resultElement.textContent =  timeSinceSpecificDate + " MONTHS" ;}
 }
 
 document.addEventListener("DOMContentLoaded", function() {

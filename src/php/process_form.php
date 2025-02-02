@@ -1,4 +1,11 @@
 <?php
+/*
+  Project: [Your Project Name]
+  Developer: Horia-Stefan Spataru
+  Copyright © 2023 Horia-Stefan Spataru. All rights reserved.
+  Unauthorized copying, reproduction, or distribution of this script or its contents is prohibited.
+*/
+
 $servername = "localhost";
 $username = "root";
 $password = "";
