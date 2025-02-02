@@ -29,26 +29,27 @@ function calculateMonthsSinceSpecificDate() {
 function updateText() {
    var resultElement = document.getElementById('result');
     
-    var timeSinceSpecificDate = calculateMonthsSinceSpecificDate();
-    
+   var timeSinceSpecificDate = calculateMonthsSinceSpecificDate();
+
     if( timeSinceSpecificDate >= 12 )
 		{
 			var finalYears = Math.floor(timeSinceSpecificDate/12);
 			var extraMonths = Math.floor((timeSinceSpecificDate/12 - Math.floor(timeSinceSpecificDate/12))*12);
 			var constYears = " YEARS ";
-			var costMonths = " MONTHS";
+			var constMonths = " MONTHS";
+
 			if( finalYears == 1)
 				constYears = " YEAR ";
-		   if(extraMonths == 1)
+		  if(extraMonths == 1)
 				  constMonths == " MONTH";
-		   if(extraMonths)
-				  resultElement.textContent =  finalYears + constYears + extraMonths + constMonths;
-		   else 
-				  resultElement.textContent =  finalYears + constYears;
-				
+		  if(extraMonths == 0)
+        resultElement.textContent =  finalYears + constYears;
+      else 
+			  resultElement.textContent =  finalYears + constYears + extraMonths + constMonths;
 		}
 	  else
-		   {resultElement.textContent =  timeSinceSpecificDate + " MONTHS" ;}
+		   {resultElement.textContent =  timeSinceSpecificDate + " MONTHS" ;} 
+
 }
 
 document.addEventListener("DOMContentLoaded", function() {
