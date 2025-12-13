@@ -5,18 +5,25 @@
   Unauthorized copying, reproduction, or distribution of this script or its contents is prohibited.
 */
 
+// We define a variable for the iframe so we don't have to look it up 4 times
+const contentFrame = document.getElementById("contentFrame");
+
 document.getElementById("cvButton").onclick = function() {
-    window.location.href = "src/html/cv.html";
+    contentFrame.src = "src/html/cv.html";
 };
 
 document.getElementById("aboutButton").onclick = function() {
-  window.location.href = "src/html/info.html";
+    contentFrame.src = "src/html/info.html";
 };
 
 document.getElementById("projButton").onclick = function() {
-  window.location.href = "src/html/projects.html";
+    contentFrame.src = "src/html/projects.html";
 };
 
 document.getElementById("conButton").onclick = function() {
-  window.location.href = "src/html/contact.html";
+    contentFrame.src = "src/html/contact.html";
+};
+
+document.getElementById("homeButton").onclick = function() {
+    document.getElementById("contentFrame").src = "src/html/news.html";
 };
