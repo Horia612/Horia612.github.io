@@ -44,6 +44,7 @@ jobs:
         run: |
           npx eslint src/jscript \
             --ext .js,.jsx,.ts,.tsx \
+            --format unix \
             --format @microsoft/eslint-formatter-sarif \
             --output-file eslint-results.sarif
 
