@@ -36,15 +36,15 @@ function updateText() {
         var constYears = " YEARS ";
         var constMonths = " MONTHS";
 
-        if (finalYears == 1) {
+        if (finalYears === 1) {
             constYears = " YEAR ";
         }
         
-        if (extraMonths == 1) {
+        if (extraMonths === 1) {
             constMonths = " MONTH";
         }
 
-        if (extraMonths == 0) {
+        if (extraMonths === 0) {
             resultElement.textContent = finalYears + constYears;
         } else {
             resultElement.textContent = finalYears + constYears + extraMonths + constMonths;

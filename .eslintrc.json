@@ -1,19 +1,15 @@
 {
   "env": {
     "browser": true,
-    "es6": true
+    "es2021": true
   },
-  "extends": "eslint:recommended",
+  "extends": ["eslint:recommended"],
   "parserOptions": {
-    "ecmaVersion": 9
+    "ecmaVersion": 2021,
+    "sourceType": "script"
   },
   "rules": {
-    "no-console": 1,
-    "no-unused-vars": 1,
-    "semi": [2, "always"],
-    "quotes": [2, "double"]
-  },
-  "globals": {
-    "$": "readonly"
+    "no-console": "warn",
+    "eqeqeq": ["error", "always"]
   }
 }
